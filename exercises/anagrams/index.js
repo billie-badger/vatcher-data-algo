@@ -13,7 +13,7 @@ function anagrams(stringA, stringB) {
     const bCharMap = buildCharMap(stringB);
 
     if (Object.keys(aCharMap).length !== Object.keys(bCharMap).length) {
-        retrun false;
+        return false;
     }
 
     for (let char in aCharMap) {
